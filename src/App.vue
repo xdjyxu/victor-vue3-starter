@@ -2,6 +2,9 @@
   // This starter template is using Vue 3 <script setup> SFCs
   // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
   // import HelloWorld from './components/HelloWorld.vue'
+  const title = useTitle();
+  const { t } = useI18n();
+  title.value = t("title");
 </script>
 
 <template>

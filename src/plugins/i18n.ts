@@ -1,7 +1,7 @@
 import { createI18n } from 'vue-i18n';
 import { chain } from 'lodash';
 
-const languages = import.meta.globEager('./lang/*')
+const languages = import.meta.globEager('../../locales/*.json')
 
 function getLangFiles(langList: Record<string, { [key: string]: any; }>) {
     return chain(langList)
