@@ -5,7 +5,7 @@ const languages = import.meta.globEager('./lang/*')
 
 function getLangFiles(langList: Record<string, { [key: string]: any; }>) {
     return chain(langList)
-        .mapKeys((value, key) => key.substring(key.lastIndexOf('/') + 1, key.lastIndexOf('.ts')))
+        .mapKeys((value, key) => key.substring(key.lastIndexOf('/') + 1, key.lastIndexOf('.json')))
         .mapValues(value => value.default)
         .value();
 }
