@@ -10,7 +10,7 @@ import legacy from '@vitejs/plugin-legacy'
 const srcPath = resolve(__dirname, 'src')
 // https://vitejs.dev/config/
 export default defineConfig({
-  envDir: resolve(srcPath, 'env'),
+  envDir: resolve(__dirname, 'env'),
   assetsInclude: [
     '**/*.gltf',
     '**/*.glb'
