@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { resolve } from 'path';
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -52,5 +53,9 @@ export default defineConfig({
     target: ['es2020', 'chrome80', 'firefox90'], // 最低支持ES2015
     rollupOptions: {
     }
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
   }
 })

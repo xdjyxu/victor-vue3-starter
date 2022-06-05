@@ -6,6 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
